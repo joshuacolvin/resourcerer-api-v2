@@ -29,7 +29,8 @@ const collectionSchema = new mongoose.Schema(
     },
     resources: [
       {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'resource',
       },
     ],
     hearts: {
